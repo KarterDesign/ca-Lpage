@@ -4,82 +4,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tabs e acord
-  </title>
-  <link rel="stylesheet" href="./bootstrap.css">
-  <style>
-    body {
-      font-family: barlow;
-      background-color: hsl(0, 0%, 97%);
-    }
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>Copa América</title>
+  <link rel="stylesheet" href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/bootstrap-asb.css">
+  <link rel="stylesheet" href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/style.css">
 
-    .strong {
-      font-weight: 700;
-    }
-
-    .imgbanner {
-      max-height: 10px;
-      border-color: black;
-      border-style: dashed;
-    }
-
-    .menuheader {
-      background-image: url(./Images/fondo-header.jpg);
-    }
-
-    .azul-asb {
-      color: #155f97;
-
-    }
-
-    .img-pais {
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
 
 </head>
 
 <body>
-  <!--navbar-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary menuheader navbar-dark">
-    <div class="container text-center justify-content-center text-white">
-      <a class="navbar-brand text-white" href="#"><span class="strong">ABSOLUT Sport</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+  <nav class="navbar navbar-expand-lg bg-body-tertiary menuheader navbar-dark justify-content-center d-flex shadow-asb">
+    <div class="container text-center text-white justify-content-center">
+      <div class="d-flex justify-content-start py-2 my-2 ">
+        <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/logo-copa-america.png" alt="ABSOLUT Sport" class="img-fluid" style="max-height: 90px;">
+      </div>
+      <button class="navbar-toggler mx-3 my-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse flex-grow-0 text-white" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
-          <li class="nav-item"><a href="#" class="nav-link text-white ">Eventos</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">GP Brasil 2024</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">Empresas</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">Delegações</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">Notícias</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">Sobre Nós</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">Contato</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle strong text-white" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              PT
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><span class="strong">PT - Português</span></a></li>
-              <li><a class="dropdown-item" href="#"><span class="strong">ES - Espanõl</span></a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-            </ul>
-          </li>
+      <div class="d-flex justify-content-center container fw-bold">
+        <div class="collapse navbar-collapse text-white flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white ">
+            <li class="nav-item"><a href="#" class="nav-link text-white ">Eventos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">GP Brasil 2024</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Empresas</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Delegações</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Notícias</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Sobre Nós</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-collapse text-white flex-grow-0 my-2" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white justify-content-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle strong text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">PT</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><span class="strong">PT - Português</span></a></li>
+            <li><a class="dropdown-item" href="#"><span class="strong">ES - Espanõl</span></a></li>
+          </ul>          
+        </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!--navbar-->
+
+
+
 
   <!--banner-->
   <div class="container py-5">
-    <img src="./Images/BANNER-PAG-TICKETS-desktop-ES.jpg" alt="" class="img-fluid rounded">
+    <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/BANNER-PAG-TICKETS-desktop-ES.jpg" alt="" class="img-fluid rounded">
   </div>
   <!--banner-->
 
@@ -88,23 +64,18 @@
     <div class="container abas">
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
+          <button class="nav-link" id="por-calendario-tab" data-bs-toggle="pill" data-bs-target="#por-calendario"
+            type="button" role="tab" aria-controls="por-calendario" aria-selected="false">
+            <span class="fw-bold fs-3">Por Calendário</span>
+          </button>
+        </li>        
+        <li class="nav-item" role="presentation">
           <button class="nav-link active" id="por-pais-tab" data-bs-toggle="pill" data-bs-target="#por-pais"
             type="button" role="tab" aria-controls="por-pais" aria-selected="true">
             <span class="fw-bold fs-3">Por País</span>
           </button>
         </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="por-calendario-tab" data-bs-toggle="pill" data-bs-target="#por-calendario"
-            type="button" role="tab" aria-controls="por-calendario" aria-selected="false">
-            <span class="fw-bold fs-3">Por Calendário</span>
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="por-cidade-tab" data-bs-toggle="pill" data-bs-target="#por-cidade" type="button"
-            role="tab" aria-controls="por-cidade" aria-selected="false">
-            <span class="fw-bold fs-3">Por Cidade</span>
-          </button>
-        </li>
+
       </ul>
       <div class="tab-content" id="pills-tabContent">
 
@@ -118,11 +89,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  data-bs-target="#Argentina" aria-expanded="true" aria-controls="Argentina">
                   <h4><strong>Argentina</strong></h4>
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="Argentina" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <!--begin card group-->
                   <div class="container py-5">
@@ -140,7 +111,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="rounded-circle align-items-center d-flex justify-content-center"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/argentina.png" class="rounded-circle img-fluid" alt="...">
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/argentina.png" class="rounded-circle img-fluid" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Argentina</span>
                                   </div>
@@ -149,7 +120,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="border rounded-circle justify-content-center d-flex"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/conf.png"
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/conf.png"
                                         class="img-fluid rounded-circle object-fit-cover w-100 img-pais" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Concacaf 5</span>
@@ -185,7 +156,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="rounded-circle align-items-center d-flex justify-content-center"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/chile.png" class="rounded-circle img-fluid" alt="...">
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/chile.png" class="rounded-circle img-fluid" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Chile</span>
                                   </div>
@@ -194,7 +165,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="rounded-circle justify-content-center d-flex"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/argentina.png"
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/argentina.png"
                                         class="img-fluid rounded-circle object-fit-cover w-100 img-pais" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Argentina</span>
@@ -230,7 +201,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="rounded-circle align-items-center d-flex justify-content-center"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/argentina.png" class="rounded-circle img-fluid" alt="...">
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/argentina.png" class="rounded-circle img-fluid" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Argentina</span>
                                   </div>
@@ -239,7 +210,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="border rounded-circle justify-content-center d-flex"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/peru.png"
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/peru.png"
                                         class="img-fluid rounded-circle object-fit-cover w-100 img-pais" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Peru</span>
@@ -272,11 +243,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  data-bs-target="#Brasil" aria-expanded="false" aria-controls="Brasil">
                   <h4><strong>Brasil</strong></h4>
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="Brasil" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
 
                   <!--begin card group-->
@@ -295,7 +266,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="rounded-circle align-items-center d-flex justify-content-center"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/brazil.png" class="rounded-circle img-fluid" alt="...">
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/brazil.png" class="rounded-circle img-fluid" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Brasil</span>
                                   </div>
@@ -304,7 +275,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="border rounded-circle justify-content-center d-flex"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/conf.png"
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/conf.png"
                                         class="img-fluid rounded-circle object-fit-cover w-100 img-pais" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Concacaf 6</span>
@@ -340,7 +311,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="rounded-circle align-items-center d-flex justify-content-center"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/paraguay.png" class="rounded-circle img-fluid" alt="...">
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/paraguay.png" class="rounded-circle img-fluid" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Paraguai</span>
                                   </div>
@@ -349,7 +320,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="border rounded-circle justify-content-center d-flex"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/brazil.png"
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/brazil.png"
                                         class="img-fluid rounded-circle object-fit-cover w-100 img-pais" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Brasil</span>
@@ -385,7 +356,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="rounded-circle align-items-center d-flex justify-content-center"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/brazil.png" class="rounded-circle img-fluid" alt="...">
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/brazil.png" class="rounded-circle img-fluid" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Brasil</span>
                                   </div>
@@ -394,7 +365,7 @@
                                   <div class="d-flex justify-content-start align-items-center">
                                     <div class="border rounded-circle justify-content-center d-flex"
                                       style="width: 40px; height: 40px;">
-                                      <img src="./Images/png/colombia.png "
+                                      <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/colombia.png "
                                         class="img-fluid rounded-circle object-fit-cover w-100 img-pais" alt="...">
                                     </div>
                                     <span class="strong azul-asb mx-2">Colombia</span>
@@ -442,11 +413,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  data-bs-target="#fdegrupos" aria-expanded="true" aria-controls="fdegrupos">
                   <h4><strong>Fase de grupos</strong></h4>
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="fdegrupos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
                   plugin adds the appropriate classes that we use to style each element. These classes control the
@@ -462,11 +433,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  data-bs-target="#Semifinal" aria-expanded="false" aria-controls="Semifinal">
                   <h4><strong>Semifinal</strong></h4>
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="Semifinal" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
                   plugin adds the appropriate classes that we use to style each element. These classes control the
@@ -482,11 +453,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  data-bs-target="#Final" aria-expanded="false" aria-controls="Final">
                   <h4><strong>Final</strong></h4>
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="Final" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
                   plugin adds the appropriate classes that we use to style each element. These classes control the
@@ -502,252 +473,9 @@
           <!--/acords groups end-->
         </div>
 
-        <!--POR CIDADE-->
-        <div class="tab-pane fade" id="por-cidade" role="tabpanel" aria-labelledby="por-cidade-tab" tabindex="0">
-          <!--acords groups start-->
-          <div class="accordion" id="accordionExample">
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Arlington" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Arlington, TX</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Arlington" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Atlanta" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Atlanta, GA</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Atlanta" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Austin" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Austin, TX</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Austin" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Charlotte" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Charlotte, NC</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Charlotte" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Rutherford" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>East Rutherford, NJ</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Rutherford" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Glendale" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Glendale, AZ</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Glendale" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Houston" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Houston, TX</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Houston" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Inglewood" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Inglewood, CA</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Inglewood" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Kansas" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Kansas City, KS</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Kansas" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#KansasMO" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Kansas City, MO</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="KansasMO" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Vegas" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Las Vegas, NV</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Vegas" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Miami" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Miami, FL</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Miami" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Orlando" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Orlando, FL</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Orlando" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-            <!--acord-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#Clara" aria-expanded="false" aria-controls="collapseThree">
-                  <h4><strong>
-                      <h4><strong>Santa Clara, CA</strong></h4>
-                    </strong></h4>
-                </button>
-              </h2>
-              <div id="Clara" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>acord</strong>
-                </div>
-              </div>
-            </div>
-            <!--/acord-->
-          </div>
-          <!--acords groups end-->
-          </acord>
-        </div>
+
+
+
       </div>
     </div>
     <!--/abas-->
@@ -759,7 +487,7 @@
 
 
 
-  <!--footer-->
+  <!--footer
   <footer class="container-fluid menuheader mt-5 pt-5 mb-0 pb-5 text-white">
     <div class="container">
       <div class="col"><span>item</span></div>
@@ -768,7 +496,32 @@
       <div class="col-4"><span>item</span></div>
     </div>
   </footer>
-  <!--footer-->
+  footer-->
+
+  <footer class="bg-light text-center text-lg-start menuheader text-white bg-dark">
+    <div class="container p-4 mt-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>
+            Here you can use rows and columns to organize your footer content.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-white navbar-dark">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled mb-0 navbar-dark text-white">
+            <li><a href="#!" class="text-white">Link 1</a></li>
+            <li><a href="#!" class="text-white">Link 2</a></li>
+            <li><a href="#!" class="text-white">Link 3</a></li>
+            <li><a href="#!" class="text-white">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3 fw-bold" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 ABSOLUT Sport Brasil
+    </div>
+  </footer>
 
 
 

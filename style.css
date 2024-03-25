@@ -1,1 +1,42 @@
+body {
+    font-family: barlow;
+    background-color: hsl(0, 0%, 97%);
+  }
 
+  .strong {
+    font-weight: 700;
+  }
+
+  .imgbanner {
+    max-height: 10px;
+    border-color: black;
+    border-style: dashed;
+  }
+
+  .menuheader {
+    background-image: url(https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/fondo-header.jpg);
+  }
+
+  .azul-asb {
+    color: #155f97;
+
+  }
+
+  .img-pais {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .logoasb {
+    display: flex;
+
+  }
+
+  .teste {
+    border-color: aquamarine;
+    border-style: dashed;
+  }
+
+  .shadow-asb {
+    box-shadow: rgba(0, 0, 0, 0.459) 0px 2px 8px 0px;
+  }
