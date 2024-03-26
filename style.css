@@ -40,3 +40,8 @@ body {
   .shadow-asb {
     box-shadow: rgba(0, 0, 0, 0.459) 0px 2px 8px 0px;
   }
+
+iframe {
+    border: none; /* Remove bordas */
+    overflow: hidden; /* Tenta ocultar barras de rolagem */
+}
