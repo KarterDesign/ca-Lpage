@@ -22,7 +22,6 @@ file_path = r'F:\Projetos\ca-Lpage\cards.xls'  # Substitua com o caminho do seu 
 excel_data = pd.read_excel(file_path)
 
 # Colunas a serem incluídas
-columns_to_include = ['_NomeSKU', '_EANSKU', '_NomeProduto', '_CodigoReferenciaProduto', '_LinkTexto', '_IDDepartamento', '_NomeDepartamento', '_IDCategoria', '_NomeCategoria']
 columns_to_include = ['numero', 'local', 'pais1', 'pais2', 'dia', 'data', 'hora', 'img1', 'img2']
 subset_data = excel_data[columns_to_include]
 
