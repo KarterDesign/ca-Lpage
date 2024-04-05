@@ -94,3 +94,7 @@
 
     </div>
 </div>
+
+body {
+    background: linear-gradient(180deg, rgb(3, 1, 27) 0%, rgb(0, 0, 0) 100%);
+}
