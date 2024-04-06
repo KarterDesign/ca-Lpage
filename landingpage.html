@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewort" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Copa América</title>
     <link rel="stylesheet"
@@ -50,11 +50,14 @@
         }
 
         .ka-h2 {
-            color: rgb(219, 175, 74);
-            font-size: 20px;
+            color: #dbaf4a;
+            font-size: 22px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 120%;
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
         }
 
         .ka-h1 {
@@ -65,6 +68,9 @@
             line-height: 120%;
             padding: 10px 0px 14px;
             text-align: center;
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
         }
 
         .ka-p {
@@ -75,8 +81,40 @@
             font-weight: 400;
             line-height: 150%;
             margin: 0px auto;
-            max-width: 1141px;
             text-align: center;
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
+
+        }
+
+    
+
+        .ka-h {
+
+            font-size: 43px;
+            font-weight: 800;
+            line-height: 120%;
+            text-align: center;
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
+        }
+
+        .ka-arrow {
+            animation: shakeY 6s ease-in-out infinite;
+        }
+
+        @keyframes sideanim {
+            from {
+                opacity: 0;
+                translate: 100vw 0;
+            }
+
+            to {
+                opacity: 1;
+                translate: 0 0;
+            }
 
         }
     </style>
@@ -127,7 +165,7 @@
 
     <img src="./Images/gbca02.png" alt="" style="opacity: .2; position: absolute; z-index: -5; width: 100%;">
 
-    <div class="container flex-grow-0 d-flex justify-content-center py-5">
+    <div class="container flex-grow-0 d-flex justify-content-center pt-5">
         <h3 class=" text-center text-white animate__fadeInUp animate__animated animate__delay-2s animate__slow">Official
             Fan Travel
             Package Partner</h3>
@@ -148,13 +186,19 @@
             style="position: absolute; top: 36%; max-width: 120vh; z-index: -1;"> -->
     </div>
 
+    <div class="container ka-arrow" style="max-width: 3%;">
+
+        <img src="./Images/right-arrow-svgrepo-com.svg" alt="">
+               
+    </div>
 
 
 
 
-    <div class="container py-5" style="max-width: 70vh;">
-        <p class="text-center text-white" style="font-size: 3rem;">
-            Compre agora seu pacote para a <span style="color: #ff1120;">Copa América 2024™</span>
+
+    <div class="container py-5"">
+        <p class=" text-center text-white ka-h">
+        Compre agora seu pacote para a <br> <span style="color: #ff1120;">Copa América 2024™</span>
         </p>
     </div>
 
@@ -197,12 +241,33 @@
 
         <div class="container d-flex justify-content-center py-3">
             <a href="https://copaamerica.absolut-sport.com.br/2024" type="button" class="ka-btn">
-                <h4 class="fw-bold">Comprar agora</h4>
+                <h4 class="">Comprar agora</h4>
             </a>
         </div>
     </div>
+    <!-- /destaques -->
 
+    <!-- destaques -->
+    <div class=" d-flex flex-column align-items-center justify-content-center container py-5">
+        <p class="ka-h2">
+            Transporte Credenciado
+        </p>
 
+        <p class="ka-h1">
+            Rumo à Glória Eterna sem perrengue
+        </p>
+        <p class="ka-p">
+            Agora você pode ir e voltar do jogo sem preocupações. Com os Pacotes Oficiais da ABSOLUT Sport você garante
+            serviço de transporte credenciado, com confiança e conforto para que sua única preocupação seja curtir o
+            espetáculo.
+        </p>
+
+        <div class="container d-flex justify-content-center py-3">
+            <a href="https://copaamerica.absolut-sport.com.br/2024" type="button" class="ka-btn">
+                <h4 class="">Comprar agora</h4>
+            </a>
+        </div>
+    </div>
     <!-- /destaques -->
 
 
