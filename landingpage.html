@@ -20,7 +20,7 @@
             margin-bottom: 0;
         }
 
-        dv {
+        div {
             border-style: dashed;
             border-color: aquamarine;
         }
@@ -88,7 +88,7 @@
 
         }
 
-    
+
 
         .ka-h {
 
@@ -117,13 +117,31 @@
             }
 
         }
+
+        @keyframes bandeiras {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .bandeirasanim {
+            animation: bandeiras 20s linear infinite;
+        }
+
+        .bandeirasflag {
+            -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div #="nav-lp" class="navbar navbar-expand-lg navbar-dark justify-content-center d-flex shadow-asb"
+    <div #="nav-lp" class=" navbar navbar-expand-lg navbar-dark justify-content-center d-flex shadow-asb"
         style="background-color: rgb(9, 0, 58);">
         <div class="container text-center text-white justify-content-center menuheader2">
             <div class="d-flex justify-content-start py-2 my-2 ">
@@ -163,7 +181,7 @@
         </div>
     </div>
 
-    <img src="./Images/gbca02.png" alt="" style="opacity: .2; position: absolute; z-index: -5; width: 100%;">
+    <img src="./Images/bgnovo-jogadores.png" alt="" style="opacity: .2; position: absolute; z-index: -5; width: 100%;" class="">
 
     <div class="container flex-grow-0 d-flex justify-content-center pt-5">
         <h3 class=" text-center text-white animate__fadeInUp animate__animated animate__delay-2s animate__slow">Official
@@ -176,21 +194,54 @@
             class="img-fluid animate__fadeInUp animate__animated animate__delay-1s animate__slow">
     </div>
 
-    <div class=" container d-flex justify-content-center" style="margin-top: -80px; overflow: hidden;">
-        <img src="./Images/taca-copa-america2.png" alt="" id="ca-cup"
-            class="img-fluid animate__animated animate__fadeInUp animate__slow" style="max-height: 60vh; ">
-        <!--
+<!-- 
+    <div class="container">
+        <div class=" container-fluid d-flex justify-content-center align-items-center"
+            style="margin-top: -80px; overflow: hidden;">
+            <img class=" animate__animated animate__backInLeft img-fluid justify-content-center d-flex"
+                src="./Images/boneco02.png" alt="" style="height: 35vh;">
+            <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/taca-copa-america2.png"
+                alt="" id="ca-cup" class="img-fluid animate__animated animate__fadeInUp animate__slow"
+                style="max-height: 60vh; ">
+            <img class="img-fluid justify-content-center d-flex" src="./Images/boneco01.png" alt=""
+                style="height: 35vh;">
+
+
             <img src="./Images/Particle-front-sudamericana.gif" alt="" class=""
-            style="position: absolute; top: 13%; width: 160vh; max-width: 100%; opacity: .7; ">
-        <img src="./Images/Particle-back-sudamericana.gif" alt=""
-            style="position: absolute; top: 36%; max-width: 120vh; z-index: -1;"> -->
+                style="position: absolute; top: 13%; width: 160vh; max-width: 100%; opacity: .7; ">
+            <img src="./Images/Particle-back-sudamericana.gif" alt=""
+                style="position: absolute; top: 36%; max-width: 120vh; z-index: -1;"> 
+        </div>
+    </div>
+     -->
+
+
+    <div class="container d-flex justify-content-center align-items-left">
+
+<!--         <div class="container d-flex justify-content-center" style="max-width: 33%;">
+            <img class="img-fluid justify-content-center d-flex animate__animated animate__fadeInUp animate__slow animate__delay-1s"
+                src="./Images/boneco02.png" alt="" style="height: 35vh;">
+        </div> -->
+
+        <div class="container" style="max-width: 33%;">
+            <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/taca-copa-america2.png"
+                alt="" id="ca-cup" class="img-fluid animate__animated animate__fadeInUp animate__slow"
+                style="max-height: 60vh; ">
+        </div>
+
+<!--         <div class="container d-flex justify-content-center" style="max-width: 33%;">
+            <img class="img-fluid justify-content-center d-flex animate__animated animate__fadeInUp animate__slow animate__delay-2s"
+                src="./Images/boneco01.png" alt="" style="height: 31vh;">
+        </div>
+ -->
     </div>
 
-    <div class="container ka-arrow" style="max-width: 3%;">
+
+    <!--  <div class="container ka-arrow" style="max-width: 3%;">
 
         <img src="./Images/right-arrow-svgrepo-com.svg" alt="">
                
-    </div>
+    </div> -->
 
 
 
@@ -199,13 +250,22 @@
     <div class="container py-5"">
         <p class=" text-center text-white ka-h">
         Compre agora seu pacote para a <br> <span style="color: #ff1120;">Copa América 2024™</span>
-        </p>
+        nos Estados Unidos</p>
     </div>
+
+    
 
     <div class="container d-flex justify-content-center py-3">
         <a href="https://copaamerica.absolut-sport.com.br/2024" type="button" class="ka-btn">
             <h4 class="">Comprar agora</h4>
         </a>
+    </div>
+
+    
+    <div class=" container bandeirasflag d-flex">
+        <img src="./Images/bandeiras01.png" alt="" class="img-fluid bandeirasanim">
+        <img src="./Images/bandeiras01.png" alt="" class="img-fluid bandeirasanim">
+        <img src="./Images/bandeiras01.png" alt="" class="img-fluid bandeirasanim">
     </div>
 
     <!-- destaques -->
