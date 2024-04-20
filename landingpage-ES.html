@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewort" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Copa América - ABSOLUT Sport</title>
+    <link rel="stylesheet"
+        href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/bootstrap-asb.css">
+    <link rel="stylesheet" href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        body {
+            background: linear-gradient(180deg, rgb(6, 2, 48) 0%, rgb(0, 0, 0) 100%);
+        }
+
+        p,
+        h4 {
+            margin-bottom: 0;
+        }
+
+        .divv {
+            border-style: dashed;
+            border-color: aquamarine;
+        }
+
+        .accordion {
+            --bs-accordion-bg: #00000000;
+            --bs-accordion-btn-color: #fff;
+            --bs-accordion-color: #fff;
+            --bs-accordion-active-bg: #ffffff1f;
+            --bs-accordion-active-color: #fff;
+        }
+
+        .ka-btn,
+        a {
+            text-decoration: unset;
+            padding: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: #155f97;
+            color: #fff;
+            border-radius: 12px;
+            box-sizing: border-box;
+            filter: drop-shadow(rgba(21, 95, 151, 0.2) 0px 0px 30px);
+            line-height: 120%;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .ka-h2 {
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
+        }
+
+        .ka-h1 {
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
+        }
+
+        .ka-anim {
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
+        }
+
+        .tagservico {
+            color: #ff1120;
+        }
+
+
+        .ka-h {
+
+            font-size: 43px;
+            font-weight: 800;
+            line-height: 120%;
+            text-align: center;
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
+        }
+
+        .ka-arrow {
+            animation: shakeY 6s ease-in-out infinite;
+        }
+
+        @keyframes sideanim {
+            from {
+                opacity: 0;
+                translate: 100vw 0;
+            }
+
+            to {
+                opacity: 1;
+                translate: 0 0;
+            }
+
+        }
+
+        @keyframes bandeiras {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .bandeirasanim {
+            animation: bandeiras 30s linear infinite;
+        }
+
+        .bandeirasflag {
+            -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div #="nav-lp" class="sticky-top navbar navbar-expand-lg navbar-dark justify-content-center d-flex shadow-asb"
+        style="background-color: rgb(9, 0, 58);">
+        <div class="container text-center text-white justify-content-center menuheader2">
+            <div class="d-flex justify-content-start py-2 my-2 ">
+                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/logo-copa-america.png"
+                    alt="ABSOLUT Sport" class="img-fluid" style="max-height: 90px;">
+            </div>
+            <button class="navbar-toggler mx-3 my-3 fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex justify-content-center container fw-bold">
+                <div class="collapse navbar-collapse text-white flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white ">
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Eventos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Compañías</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Delegaciones</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Noticias</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Sobre nosotros</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="container d-flex flex-grow-0 flex-row-reverse col-12 col-sm-12 col-md-4 col-lg-3 col-xxl-2 col-xl-2 justify-content-center">
+                <a class="btn btn-primary fw-bold" href="#preform" role="button">Registro</a>
+            </div>
+
+            <div class="navbar-collapse text-white flex-grow-0 my-2" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white justify-content-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle strong text-white" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">ES</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://copaamerica.absolut-sport.com.br/lp"><span
+                                        class="strong">PT - Português</span></a></li>
+                            <li><a class="dropdown-item" href="https://copaamerica.absolut-sport.com.br/en"><span
+                                        class="strong">EN - English</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/bgnovo-jogadores.png" alt=""
+        style="opacity: .2; position: absolute; z-index: -5; width: 100%;"
+        class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex d-xxl-flex">
+
+    <img src="./Images/bgnovo-jogadores-mobile.png" alt=""
+        style="opacity: .2; position: absolute; z-index: -5; width: 100%;"
+        class="d-flex d-sm-flex d-md-flex d-lg-none d-xl-none d-xxl-none">
+
+    <div class="container flex-grow-0 d-flex justify-content-center pt-5">
+        <h3 class=" text-center text-white animate__fadeInUp animate__animated animate__delay-2s animate__slow">Official
+            Fan Travel Package Partner</h3>
+    </div>
+
+
+
+
+    <div class="container text-center text-white d-flex justify-content-center overflow-hidden">
+
+        <div class="row">
+            <div
+                class="d-flex flex-column justify-content-center col-12 col-sm-12 col-lg-4 order-3 order-lg-0 order-sm-2">
+                <h1 class="text-center text-sm-center text-md-center text-lg-start text-white fs-1 fw-bold">
+                    Compra tu paquete ahora<br class="d-flex d-lg-none d-sm-none d-md-flex d-xl-flex d-xxl-flex"> <span
+                        style="color: #ff1120;">CONMEBOL Copa América 2024™ </span> en Estados Unidos</p>
+                </h1>
+                <a class="btn btn-primary my-4 fw-bold btn-lg" href="#preform" role="button">Registro</a>
+            </div>
+            <div class="col-12 col-lg-4 col-sm-12 order-1 order-lg-1">
+                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/taca-copa-america2.png"
+                    alt="" id="ca-cup" class="img-fluid animate__animated animate__fadeInUp animate__slow"
+                    style="max-height: 60vh; ">
+            </div>
+            <div class="d-none d-lg-flex d-sm-none col col-sm-12 col-xs-12 col-lg-4 order-2" style="opacity: 0;">
+                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/taca-copa-america2.png"
+                    alt="" id="ca-cup" class="img-fluid animate__animated animate__fadeInUp animate__slow"
+                    style="max-height: 60vh; ">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container bandeirasflag d-flex" id="preform" style="overflow: hidden;">
+        <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/bandeiras01.png" alt=""
+            class="img-fluid bandeirasanim px-1">
+        <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/bandeiras01.png" alt=""
+            class="img-fluid bandeirasanim px-1">
+        <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/bandeiras01.png" alt=""
+            class="img-fluid bandeirasanim px-1">
+    </div>
+
+    <!-- form -->
+    <div class="py-5">
+        <div class="container py-5 rounded" id="form">
+            <div class="row d-flex justify-content-center">
+                <div
+                    class="col-12 col-lg-4 rounded order-2 order-lg-2 d-flex flex-grow-0 p-0 m-0 justify-content-center align-items-center ">
+                    <div role="main" id="copa-america-1938402d35b84f5d2916"></div>
+                    <script type="text/javascript"
+                        src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+                    <script
+                        type="text/javascript"> new RDStationForms('copa-america-1938402d35b84f5d2916', 'UA-205113243-1').createForm();</script>
+                </div>
+                <div
+                    class="rounded col-12 col-lg-6 d-flex align-items-center py-3 order-lg-1 order-1 d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold text-white text-center text-lg-start">
+
+                        Tu primer paso para disfrutar de una experiencia única es activar tu registro. ¡De esta manera
+                        recibirás todas las novedades sobre los paquetes de primera mano!
+
+                    </h2>
+                    <p class="fw-medium fs-4 text-white text-center text-lg-start py-4">
+                        Ofrecemos paquetes completos para tomar la gran decisión en un momentoinolvidable, con servicios
+                        bajo demanda. Pronto tendrás acceso a todas estas experiencias premium.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form -->
+
+
+
+
+
+
+    <div class=" d-flex flex-column align-items-center justify-content-center container py-5">
+        <p class="tagservico fs-5 fw-bold ka-anim">
+            Entradas oficiales
+        </p>
+
+        <p class="fs-1 text-white fw-bold text-center text-center ka-anim">
+            Disfruta cada momento de la CONMEBOL Copa América 2024™ con total seguridad y confiabilidad.
+
+        </p>
+        <p class="fs-6 text-white fw-medium text-center ka-anim col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+            ¡Puede estar seguro de que con nosotros tendrá la garantía de comprar boletos legítimos para aprovecharlos
+            al máximo! Elige tu asiento entre nuestras categorías con una vista privilegiada y siente la emoción de los
+            estadios más icónicos de Estados Unidos.
+
+        </p>
+
+        <a class="btn btn-primary my-4 fw-bold btn-lg" href="#preform" role="button">Registro</a>
+    </div>
+
+
+
+
+    <div class=" d-flex flex-column align-items-center justify-content-center container py-5">
+        <p class="tagservico fs-5 fw-bold">
+            Alojamiento
+        </p>
+
+        <p class="fs-1 text-white fw-bold text-center ka-anim">
+            Las mejores opciones de hoteles seleccionadas especialmente para ti
+
+        </p>
+        <p class="fs-6 text-white fw-medium text-center ka-anim col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+            Con la Agencia Oficial podrás garantizar una estancia en los mejores hoteles de Estados Unidos. Elige la
+            opción que mejor se adapte a tu viaje y disfruta de todo lo que las ciudades anfitrionas tienen para
+            ofrecerte.
+
+        </p>
+
+        <a class="btn btn-primary my-4 fw-bold btn-lg" href="#preform" role="button">Registro</a>
+
+    </div>
+
+
+
+    <div class="container d-flex justify-content-center align-items-center py-5">
+        <div class="row col-8 align-items-start">
+            <div
+                class="ka-anim col-12 col-sm-12 col-md- col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column justify-content-center align-items-center">
+                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/ft02.png" alt=""
+                    class="img-fluid">
+                <h3 class="text-white py-3">Seguridad</h3>
+                <p class="fw-medium text-center text-white">
+                    Disfruta de tu experiencia sabiendo que estás comprando con una agencia oficial.
+                </p>
+            </div>
+            <div
+                class="ka-anim col-12 col-sm-12 col-md- col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column justify-content-center align-items-center">
+                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/ft01.png" alt=""
+                    class="img-fluid">
+                <h3 class="text-white py-3">
+                    Comodidad
+                </h3>
+                <p class="fw-medium text-center text-white">
+                    Tenga la mejor estructura disponible para su comodidad.
+
+                </p>
+            </div>
+            <div
+                class="ka-anim col-12 col-sm-12 col-md- col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column justify-content-center align-items-center">
+                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/ft03.png" alt=""
+                    class="img-fluid">
+                <h3 class="text-white py-3">Exclusividad</h3>
+                <p class="fw-medium text-center text-white">Disfruta de servicios solo para quienes son socios oficiales
+                    de CONMEBOL.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container pt-5">
+        <h1 class="fw-bold text-white">
+            Preguntas frecuentes:
+        </h1>
+    </div>
+
+    <div class="container py-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#Pergunta1" aria-expanded="true" aria-controls="Pergunta1">
+                        ¿Cómo recibo mis entradas para los partidos de la Copa América?
+                </h2>
+                <div id="Pergunta1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Todas las entradas para la CONMEBOL COPA AMÉRICA 2024</strong>se entregarán como
+                        entradas digitales. Los boletos digitales se enviarán a una aplicación dedicada cuando se
+                        acerque el día del juego.
+                        <br><br>
+
+                        Todos los fanáticos recibirán instrucciones por correo electrónico cuando se envíen sus boletos
+                        digitales. Tenga en cuenta que la distribución de entradas se realiza de forma paulatina. Esto
+                        significa que no todos los billetes se envían al mismo tiempo. Además, el orden de distribución
+                        no se basa en el momento de la compra.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Si reservo dos o más entradas, ¿se garantizarán juntas o una al lado de la otra en el estadio?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si reservas dos entradas, te garantizamos que estarán juntas en el estadio. Sin embargo, si su
+                        compra incluye más de dos boletos, existe la posibilidad de que algunos asientos sean
+                        diferentes.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#pergunta3" aria-expanded="false" aria-controls="pergunta3">
+                        ¿Ofrecen vuelos al evento?
+                    </button>
+                </h2>
+                <div id="pergunta3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        No ofrecemos vuelos para la compra de paquetes en línea.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#pergunta4" aria-expanded="false" aria-controls="pergunta4">
+                        ¿Qué ofrecemos en nuestros paquetes completos?
+                    </button>
+                </h2>
+                <div id="pergunta4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Ofrecemos alojamiento, traslado al estadio y entradas.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FAQ-->
+
+    <footer class="container-fluid bg-black pt-5 mt-5 mb-0 ">
+        <div class="container py-3">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 container">
+                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/Asset-2.png"
+                    class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="container d-flex flex-grow-1 text-center justify-content-center align-items-center py-4 text-white">
+            <p>
+                © ABSOLUT Sport. Todos os direitos reservados.
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
