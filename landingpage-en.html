@@ -114,70 +114,88 @@
         .bandeirasflag {
             -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
         }
+
+        @keyframes progressbar {
+
+            0% {
+                width: 0vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+
+        }
+
+        .glass {
+            background-color: #000d4698;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .bar {
+            height: 1vh;
+            padding-bottom: 1vh;
+            background-color: #fff;
+            animation: progressbar;
+            animation-range: cover 19% cover 86%;
+            animation-timeline: view();
+            z-index: 10000;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div #="nav-lp" class="sticky-top navbar navbar-expand-lg navbar-dark justify-content-center d-flex shadow-asb"
-        style="background-color: rgb(9, 0, 58);">
-        <div class="container text-center text-white justify-content-center menuheader2">
-            <div class="d-flex justify-content-start py-2 my-2 ">
-                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/logo-copa-america.png"
-                    alt="ABSOLUT Sport" class="img-fluid" style="max-height: 90px;">
-            </div>
-            <button class="navbar-toggler mx-3 my-3 fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-flex justify-content-center container fw-bold">
-                <div class="collapse navbar-collapse text-white flex-grow-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white ">
-                        <li class="nav-item"><a href="#" class="nav-link text-white">Events</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-white">Companies</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-white">News</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-white">About Us</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
-                    </ul>
+    <div class="bar sticky-top">
+    </div>
+
+    <div class="container-fluid sticky-top glass">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-12 col-md-9 col-lg-9 py-2 d-flex justify-content-center justify-content-md-start">
+                    <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/logo-copa-america.png"
+                        alt="ABSOLUT Sport" class="img-fluid" style="max-height: 90px;">
                 </div>
-            </div>
-            <div
-                class="container d-flex flex-grow-0 flex-row-reverse col-12 col-sm-12 col-md-4 col-lg-3 col-xxl-2 col-xl-2 justify-content-center">
-                <a class="btn btn-primary fw-bold" href="#preform" role="button">Sign Up</a>
-            </div>
 
-            <div class="navbar-collapse text-white flex-grow-0 my-2" id="navbarSupportedContent">
+                <div class="col py-3 d-flex justify-content-center justify-content-md-end align-items-center">
+                    <a class="btn btn-primary fw-bold flex-shrink-0" href="#preform" role="button">Sign Up</a>
+                </div>
 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white justify-content-center">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle strong text-white" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><img
-                                src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/united-states-of-america.png"
-                                alt="" class="img-fluid" style="max-height: 25px;">  EN</a>
-                        <ul class="dropdown-menu col-sm-4 col-md-4">
-                            <li><a class="dropdown-item" href="https://copaamerica.absolut-sport.com.br/lp"><span
-                                        class="strong"><img
-                                            src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/brazil.png"
-                                            alt="" class="img-fluid" style="max-height: 30px;">  PT</span></a></li>
-                            <li><a class="dropdown-item" href="https://copaamerica.absolut-sport.com.br/es"><span
-                                        class="strong"><img
-                                            src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/spain.png"
-                                            alt="" class="img-fluid" style="max-height: 30px;">  ES</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="col d-flex justify-content-center flex-column align-items-md-end align-items-center">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 text-white justify-content-center">
+                        <li class="nav-item dropdown d-flex flex-column align-items-center ">
+                            <a class="nav-link dropdown-toggle strong text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><img
+                                    src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/united-states-of-america.png"
+                                    alt="" class="img-fluid" style="max-height: 25px;">  EN</a>
+                            <ul class="dropdown-menu col-sm-4 col-md-4">
+                                <li><a class="dropdown-item" href="https://copaamerica.absolut-sport.com.br/lp"><span
+                                            class="strong"><img
+                                                src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/brazil.png"
+                                                alt="" class="img-fluid" style="max-height: 30px;">  PT</span></a></li>
+                                <li><a class="dropdown-item" href="https://copaamerica.absolut-sport.com.br/es"><span
+                                            class="strong"><img
+                                                src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/png/spain.png"
+                                                alt="" class="img-fluid" style="max-height: 30px;">  ES</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </div>
 
+
     <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/bgnovo-jogadores.png" alt=""
-        style="opacity: .2; position: absolute; z-index: -5; width: 100%;"
+        style="opacity: .2; position: absolute; z-index: -5; width: 100%; top: 50px;"
         class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex d-xxl-flex">
 
     <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/bgnovo-jogadores-mobile.png"
-        alt="" style="opacity: .2; position: absolute; z-index: -5; width: 100%;"
+        alt="" style="opacity: .2; position: absolute; z-index: -5; width: 100%; top: 100px;"
         class="d-flex d-sm-flex d-md-flex d-lg-none d-xl-none d-xxl-none">
 
     <div class="container flex-grow-0 d-flex justify-content-center pt-5">
@@ -199,10 +217,18 @@
                 </h1>
                 <a class="btn btn-primary my-4 fw-bold btn-lg" href="#preform" role="button">Sign Up</a>
             </div>
-            <div class="col-12 col-lg-4 col-sm-12 order-1 order-lg-1">
+            <div class="col-12 col-lg-4 col-sm-12 order-1 order-lg-1 position-relative">
                 <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/taca-copa-america2.png"
                     alt="" id="ca-cup" class="img-fluid animate__animated animate__fadeInUp animate__slow"
                     style="max-height: 60vh; ">
+                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/Particle-front-sudamericana.gif"
+                    alt=""
+                    class="position-absolute translate-middle top-50 start-50 animate__animated animate__fadeInUp animate__slow"
+                    style="max-width: 90vh; margin-top: 9vh;">
+                <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/Particle-back-sudamericana.gif"
+                    alt=""
+                    class="position-absolute translate-middle top-50 start-50 animate__animated animate__fadeInUp animate__slow"
+                    style="max-width: 90vh; margin-top: 9vh; z-index: -2;">
             </div>
             <div class="d-none d-lg-flex d-sm-none col col-sm-12 col-xs-12 col-lg-4 order-2" style="opacity: 0;">
                 <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/taca-copa-america2.png"
@@ -251,33 +277,7 @@
             </div>
         </div>
     </div>
-    <!-- form -->
-
-
-
-
-    <!-- destaques -->
-    <div class=" d-flex flex-column align-items-center justify-content-center container py-5">
-        <p class="tagservico fs-5 fw-bold">
-            Accommodation
-        </p>
-
-        <p class="fs-1 text-white fw-bold text-center ka-anim">
-            The best hotel options selected especially for you
-        </p>
-        <p class="fs-6 text-white fw-medium text-center ka-anim col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
-            With the Official Agency, you ensure a stay in the best hotels in the United States. Choose the option that
-            best fits your trip and enjoy everything that the host cities have to offer.
-        </p>
-
-        <a class="btn btn-primary my-4 fw-bold btn-lg" href="#preform" role="button">Sign Up</a>
-
-    </div>
-
-
-
-
-    <!-- /destaques -->
+    <!-- /form -->
 
     <!-- destaques -->
     <div class=" d-flex flex-column align-items-center justify-content-center container py-5">
@@ -296,6 +296,37 @@
 
         <a class="btn btn-primary my-4 fw-bold btn-lg" href="#preform" role="button">Sign Up</a>
     </div>
+
+<!--     /destaques -->
+
+    <!-- Hospedagem -->
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 py-5 order-1 order-md-0"
+                style="background-color: rgb(247, 247, 247);">
+                <div class="container col-12 col-lg-8">
+                    <p class="tagservico fw-bold ka-anim">
+                        Accommodation
+                    </p>
+                    <h1 class="fw-bold py-2 ka-anim" style="color: #000d46;">
+                        The best hotel options selected especially for you
+                    </h1>
+                    <p class="pb-2 fw-medium ka-anim">
+                        With the Official Agency, you ensure a stay in the best hotels in the United States. Choose the
+                        option that best fits your trip and enjoy everything that the host cities have to offer.
+                    </p>
+                    <a class="btn btn-primary my-4 fw-bold btn-lg ka-anim" href="#preform" role="button">Sign Up</a>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6  p-0 m-0 order-0 order-md-1"
+                style="background-image: url(https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/MIA_916_original.jpg); background-size: cover; background-position: center; min-height: 300px;">
+            </div>
+        </div>
+    </div>
+    <!-- Hospedagem -->
+
+
 
     <div class="container d-flex justify-content-center align-items-center py-5">
         <div class="row col-8 align-items-start">
