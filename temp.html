@@ -1,71 +1,110 @@
-<!--     <div class="container py-5" style="max-width: 40vh">
-        <img src="./Images/Asset-2.png" alt=""
-            class="img-fluid animate__fadeInUp animate__animated animate__delay-1s animate__slow">
-    </div> -->
+<!doctype html>
+<html lang="en">
 
-<!-- 
-    <div class="container">
-        <div class=" container-fluid d-flex justify-content-center align-items-center"
-            style="margin-top: -80px; overflow: hidden;">
-            <img class=" animate__animated animate__backInLeft img-fluid justify-content-center d-flex"
-                src="./Images/boneco02.png" alt="" style="height: 35vh;">
-            <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/taca-copa-america2.png"
-                alt="" id="ca-cup" class="img-fluid animate__animated animate__fadeInUp animate__slow"
-                style="max-height: 60vh; ">
-            <img class="img-fluid justify-content-center d-flex" src="./Images/boneco01.png" alt=""
-                style="height: 35vh;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewort" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Copa América</title>
+    <link rel="stylesheet"
+        href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/bootstrap-asb.css">
+    <link rel="stylesheet" href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-
-            <img src="./Images/Particle-front-sudamericana.gif" alt="" class=""
-                style="position: absolute; top: 13%; width: 160vh; max-width: 100%; opacity: .7; ">
-            <img src="./Images/Particle-back-sudamericana.gif" alt=""
-                style="position: absolute; top: 36%; max-width: 120vh; z-index: -1;"> 
-        </div>
-    </div>
-     -->
+    <style>
+        body {
+            margin: 0;         
+            padding: 0;
+            overflow: hidden;   
+        }
 
 
-     <div class="row row-cols-1 row-cols-md-2 g-4">
+        dibv {
+            border-style: dashed;
+            border-color: aquamarine;
+        }
 
-        <!--         <div class="container d-flex justify-content-center" style="max-width: 33%;">
-                    <img class="img-fluid justify-content-center d-flex animate__animated animate__fadeInUp animate__slow animate__delay-1s"
-                        src="./Images/boneco02.png" alt="" style="height: 35vh;">
-                </div> -->
-        
-        
-                <div class="row" style="max-width: 33%;">
-                    <div class="col-12 col-sm-12 col-md-12 py-5"">
-                        <p class=" text-start text-white ka-h">
-                        Compre agora seu pacote para a <br> <span style="color: #ff1120;">Copa América 2024™</span>
-                        nos Estados Unidos</p>
-                        <a class="btn btn-primary my-4 fw-bold btn-lg" href="#" role="button">Comprar agora</a>
-                    </div>     
-        
-        
-                    
-                
-        
-                </div>
-        
-                <div class="col-12 col-sm-12 col-md-12 justify-content-center " style="max-width: 33%;">
-                    <img src="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/taca-copa-america2.png"
-                        alt="" id="ca-cup" class="img-fluid animate__animated animate__fadeInUp animate__slow"
-                        style="max-height: 60vh; ">
-                </div>
-                <div class="container" style="max-width: 33%;"></div>
-        
-        
-        
-        <!--         <div class="container d-flex justify-content-center" style="max-width: 33%;">
-                    <img class="img-fluid justify-content-center d-flex animate__animated animate__fadeInUp animate__slow animate__delay-2s"
-                        src="./Images/boneco01.png" alt="" style="height: 31vh;">
-                </div>
-         -->
-            </div>
-        
-        
-            <!--  <div class="container ka-arrow" style="max-width: 3%;">
-        
-                <img src="./Images/right-arrow-svgrepo-com.svg" alt="">
-                       
-            </div> -->
+        .accordion {
+            --bs-accordion-bg: #00000000;
+            --bs-accordion-btn-color: #fff;
+            --bs-accordion-color: #fff;
+            --bs-accordion-active-bg: #ffffff1f;
+            --bs-accordion-active-color: #fff;
+        }
+
+        .ka-anim {
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
+        }
+
+        .tagservico {
+            color: #ff1120;
+        }
+
+
+        .ka-h {
+
+            font-size: 43px;
+            font-weight: 800;
+            line-height: 120%;
+            text-align: center;
+            animation: fadeInUp 1ms ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 30%;
+        }
+
+        .ka-arrow {
+            animation: shakeY 6s ease-in-out infinite;
+        }
+
+        @keyframes sideanim {
+            from {
+                opacity: 0;
+                translate: 100vw 0;
+            }
+
+            to {
+                opacity: 1;
+                translate: 0 0;
+            }
+
+        }
+
+        @keyframes bandeiras {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .bandeirasanim {
+            animation: bandeiras 30s linear infinite;
+        }
+
+        .bandeirasflag {
+            -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
+        }
+
+        iframe {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            min-width: 100vw;
+            overflow: hidden;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <iframe src="landingpage.html" frameborder="0"></iframe>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>    
+</body>
+</html>
