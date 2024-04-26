@@ -14,7 +14,7 @@ body {
 }
 
 .menuheader {
-  background-image: url(https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/Images/fondo-header.jpg);
+  background-image: url(https://libertadores.absolut-sport.com.brhttp://copaamerica.com/wp-content/uploads/2024/Images/fondo-header.jpg);
 }
 
 .azul-asb {
@@ -54,4 +54,98 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* Start Custom Fonts CSS */
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Thin.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: bold;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 100;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Light-1.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 200;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Light-2.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Semilight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Medium-2.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Medium-3.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Semibold-1.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Semibold-2.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 800;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Semibold-3.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 900;
+  font-display: fallback;
+  src: url('https://copaamerica.com/wp-content/themes/cup/assets/Branding-Black.woff') format('woff');
+}
+/* End Custom Fonts CSS */
+
+.branding-normal {
+
+  font-family: 'Branding';
+  font-style: normal;
+  font-weight: 900;
+
+}
+
+.brt {
+  font-family: 'Branding' !important;
+  font-style: normal;
+  font-weight: normal;
 }
