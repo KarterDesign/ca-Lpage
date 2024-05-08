@@ -1,6 +1,6 @@
 // Arquivo script.js
 document.addEventListener("DOMContentLoaded", function () {
-    var novoTexto = `<script id="update" src="https://libertadores.absolut-sport.com.br/copaamerica/textos.js?v=4"></script>
+    var novoTexto = `<script id="update" src="https://libertadores.absolut-sport.com.br/copaamerica/textos.js?v=5"></script>
     <div>
     
     
@@ -13,8 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <meta name="viewort" content="width=device-width, initial-scale=1">
                 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
                 <title>Copa América</title>
-                <link rel="stylesheet" href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/bootstrap-asb.css">
-                <link rel="stylesheet" href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/style.css?v=3">
+                <link rel="stylesheet"
+                    href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/bootstrap-asb.css">
+                <link rel="stylesheet"
+                    href="https://libertadores.absolut-sport.com.br/wp-content/uploads/2024/03/style.css?v=3">
                 <link rel="stylesheet" href="./style.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     
@@ -150,7 +152,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         animation-timeline: view();
                         z-index: 10000;
                     }
-    
                 </style>
     
             </head>
@@ -405,20 +406,12 @@ document.addEventListener("DOMContentLoaded", function () {
                             <h2 class="accordion-header">
                                 <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#Pergunta1" aria-expanded="true" aria-controls="Pergunta1">
-                                    How do I receive my tickets for the Copa América games?
+                                    When/How will I receive my tickets?
                             </h2>
                             <div id="Pergunta1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>
-                                        All tickets for CONMEBOL COPA AMÉRICA 2024
-                                    </strong>
-                                    will be delivered as digital tickets. The digital tickets
-                                    will be sent to a dedicated app closer
-                                    to the game day.
-                                    <br><br>
-                                    will be delivered as digital tickets. The digital tickets
-                                    will be sent to a dedicated app closer
-                                    to the game day.
+                                    No later than 48 hours before the event, you will receive the tickets electronically via
+                                    Ticketmaster (Using the email that you used for purchasing your package with us today)
                                 </div>
                             </div>
                         </div>
@@ -426,18 +419,12 @@ document.addEventListener("DOMContentLoaded", function () {
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    If I book two or more tickets, will they be guaranteed to be
-                                    together or close to each other in
-                                    the stadium?
+                                    Do you offer flights for the event?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    If you book two tickets, we guarantee that they will be
-                                    together in the stadium. However, if
-                                    your purchase includes more than two tickets, there may be a
-                                    possibility that some seats will be
-                                    separate.
+                                    We do not offer flights for purchase through our online packages.
                                 </div>
                             </div>
                         </div>
@@ -445,12 +432,12 @@ document.addEventListener("DOMContentLoaded", function () {
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#pergunta3" aria-expanded="false" aria-controls="pergunta3">
-                                    Do you offer flights to the event?
+                                    What do you offer in the full packages?
                                 </button>
                             </h2>
                             <div id="pergunta3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    We do not offer flights for the purchase of packages online.
+                                    We offer tickets, accommodations and stadium transfers.
                                 </div>
                             </div>
                         </div>
@@ -459,12 +446,100 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#pergunta4" aria-expanded="false" aria-controls="pergunta4">
     
-                                    What do we offer in our complete packages?
+                                    Do you offer assistance for visa issuance?
+    
                                 </button>
                             </h2>
                             <div id="pergunta4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
+                                    No, ABSOLUT Sport does not provide visa issuance assistance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pergunta5" aria-expanded="false" aria-controls="pergunta5">
+    
+                                    What do we offer in our complete packages?
+                                </button>
+                            </h2>
+                            <div id="pergunta5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
                                     We offer accommodation, tickets and hospitality services.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pergunta6" aria-expanded="false" aria-controls="pergunta6">
+    
+                                    Can I exchange the package I purchased?
+                                </button>
+                            </h2>
+                            <div id="pergunta6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    No, clients cannot exchange packages that have been sold.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pergunta7" aria-expanded="false" aria-controls="pergunta7">
+    
+                                    What categories do we offer?
+    
+                                </button>
+                            </h2>
+                            <div id="pergunta7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>CAT 1</strong> - Closest privileged view of the field <br>
+                                    <strong>CAT 2</strong> - Wider privileged view of the field <br>
+                                    <strong>CAT 3</strong> - Frontal view of the field
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pergunta8" aria-expanded="false" aria-controls="pergunta8">
+    
+                                    When will I receive my Official package?
+                                </button>
+                            </h2>
+                            <div id="pergunta8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    When your tickets are ready for distribution, You will receive an email (email address stated on your application) with instructions about how to download the official mobile tickets app.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pergunta9" aria-expanded="false" aria-controls="pergunta9">
+    
+                                    What kind of accommodation can I expect in your travel packages?
+                                </button>
+                            </h2>
+                            <div id="pergunta9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We reserve excellent hotel options in the city to accommodate groups and individual fans in Double, Twin, and Single accommodations. The prices listed for Double or Twin rooms are per person, sharing the accommodation with another traveler, so to secure your reservation in these types of accommodations, purchases in pairs of packages will only be allowed. Single rooms will be allocated for those who wish to guarantee individual stays. To ensure the comfort and safety of our clients, ABSOLUT Sport is not offering options for triple or quadruple rooms.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pergunta10" aria-expanded="false" aria-controls="pergunta10">
+    
+                                    Can I cancel my order once it has been invoiced?
+                                </button>
+                            </h2>
+                            <div id="pergunta10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes, according to our terms and conditions, orders can be canceled free of charge within one week, and after that, there is a 20% fee. If the order is placed one week before the event, cancellation is not possible.
                                 </div>
                             </div>
                         </div>
